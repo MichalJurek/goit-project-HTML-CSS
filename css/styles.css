@@ -297,6 +297,10 @@ h1 {
     border-radius: 50%;
 }
 
+.close-icon {
+    fill: black;
+}
+
 .align-items-center {
     display: flex;
     flex-direction: column;
