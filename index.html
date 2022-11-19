@@ -60,6 +60,54 @@
                 <use href="./images/icons.svg#icon-icon-x-closeup"></use>
               </svg>
             </button>
+            <h4 class="heading-contact-form">Zostaw swoje dane w formularzu poniżej</h4>
+            <form name="contact-details-form" autocomplete="on" class="gap-10-px-second" novalidate>
+              <fieldset class="noborder">
+                <label for="username" class="label-text-settings">
+                  <svg class="username-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-icon-profile-person"></use>
+                  </svg>
+                  Imię
+                  <input name="name" type="text" id="username">
+                </label>
+              </fieldset>
+              <fieldset class="noborder">
+                <label for="number" class="label-text-settings">
+                  <svg class="telephone-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-icon-telephone"></use>
+                  </svg>
+                  Telefon
+                  <input name="number" type="tel" id="number">
+                </label>
+              </fieldset>
+              <fieldset class="noborder">
+                <label for="email" class="label-text-settings">
+                  <svg class="form-envelope-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-icon-envelope-second"></use>
+                  </svg>
+                  E-mail
+                  <input name="email" type="email" id="email">
+                </label>
+              </fieldset>
+              <fieldset class="noborder">
+                <label for="comment" class="label-text-settings">
+                  Komentarz
+                  <textarea name="comment" type="text" id="comment" rows="7" placeholder="Wprowadź text"></textarea>
+                </label>
+              </fieldset>
+              <fieldset class="noborder">
+                <label class="form-terms-and-conditions-settings">
+                <input type="checkbox" name="Agree-to-terms-and-conditions" value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności.">
+                Oświadczam iż akceptuję 
+                <a class="form-terms-and-conditions-link-settings" href=""><span>Regulamin</span></a> i <a class="form-terms-and-conditions-link-settings" href=""><span>Politykę Prywatności</span></a>.
+              </label>
+              </fieldset>
+              <fieldset class="noborder">
+                <div class="justify-center">
+              <button class="form-submit-button" type="submit">Wyślij</button>
+              </div>
+              </fieldset>
+            </form>
           </div>
         </div>
       </div>
@@ -411,17 +459,17 @@
           <div>
             <h4 class="footer-text-heading">Zapisz się do newslettera</h4>
           </div>
-            <form class="gap-12-px">
-              <label>
-                <input class="newsletter-send-form" type="email" name="email" placeholder="E-mail">
-              </label>
-              <button type="submit" class="newsletter-button">Zapisz się
-                <svg class="icon-send-paperfly" width="24" height="24">
-                  <use href="./images/icons.svg#icon-icon-send-paperfly">
-                  </use>
-                </svg>
-              </button>
-            </form>
+          <form class="gap-12-px">
+            <label for="email">
+              <input class="newsletter-send-form" type="email" name="email" id="email" placeholder="E-mail">
+            </label>
+            <button type="submit" class="newsletter-button">Zapisz się
+              <svg class="icon-send-paperfly" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send-paperfly">
+                </use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </div>
