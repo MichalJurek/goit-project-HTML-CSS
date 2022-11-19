@@ -324,6 +324,7 @@ h1 {
 .noborder {
     border: 0;
     margin: 0;
+    padding: 0;
 }
 
 .justify-center {
@@ -369,15 +370,37 @@ h1 {
     cursor: pointer;
 }
 
-.label-text-settings {
+.label-form-settings {
     display: flex;
+    flex-direction: column;
     font-family: var(--FontDefaultRoboto);
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 1%;
     color: var(--MainGreyColor);
-    justify-content: center;
+    align-items: center;
+}
+
+.label-form-input-settings {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding: 0;
+    border-radius: 4%;
+    width: 448px;
+    height: 40px;
+}
+
+.label-form-textarea-settings {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4%;
+    width: 448px;
+    height: 120px;
+}
+
+.username-icon {
+    position: relative;
+    top: 30px;
+    left: 15px;
 }
 
 .align-items-center {
