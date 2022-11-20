@@ -356,6 +356,7 @@ h1 {
 
 .form-terms-and-conditions-settings {
     display: flex;
+    position: relative;
     font-family: var(--FontDefaultRoboto);
     font-size: 14px;
     font-weight: 400;
@@ -363,9 +364,64 @@ h1 {
     letter-spacing: 3%;
     color: var(--MainGreyColor);
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
+    cursor: pointer;
+    user-select: none;
 }
 
+.form-terms-and-conditions-settings input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom-checkbox {
+    background-color: black;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--MainBlackColor);
+    border-radius: 4px;
+    position: absolute;
+    left: 54px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkmark {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    fill: var(--MainWhiteColor);
+}
+
+.form-terms-and-conditions-settings input:checked ~ .custom-checkbox, .checkmark {
+    background-color: var(--StudioBlueColor);
+    border: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*
+.checkmark {
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    fill: palevioletred;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-terms-and-conditions-settings input:checked ~ .checkmark {
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    fill: var(--MainWhiteColor);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+*/
 .form-terms-and-conditions-link-settings {
     font-family: var(--FontDefaultRoboto);
     font-size: 14px;
