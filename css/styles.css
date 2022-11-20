@@ -188,6 +188,7 @@ body {
     display: flex;
     gap: 10px;
 }
+
 .header-links-contact:hover,
 .header-links-contact:focus,
 .header-links-contact:hover .icon-smartphone,
@@ -288,6 +289,7 @@ h1 {
     justify-content: center;
 
 }
+
 .close-button {
     position: absolute;
     cursor: pointer;
@@ -315,16 +317,31 @@ h1 {
     margin: 0;
 }
 
-.gap-10-px-second {
+.fieldset-settings {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    position: relative;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 40px;
+    margin-top: 28px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 0;
 }
 
-.noborder {
-    border: 0;
-    margin: 0;
+.fieldset-textarea-settings {
+    display: flex;
+    position: relative;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 120px;
+    margin-top: 28px;
+    margin-left: 40px;
+    margin-right: 40px;
     padding: 0;
+
 }
 
 .justify-center {
@@ -371,36 +388,68 @@ h1 {
 }
 
 .label-form-settings {
-    display: flex;
-    flex-direction: column;
     font-family: var(--FontDefaultRoboto);
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 1%;
     color: var(--MainGreyColor);
-    align-items: center;
+    position: absolute;
+    top: -18px;
+    left: 0px;
 }
 
-.label-form-input-settings {
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    padding: 0;
-    border-radius: 4%;
-    width: 448px;
-    height: 40px;
+.textarea-form-input-settings {
+    height: 100%;
+    width: 100%;
+    padding: 12px 16px 12px 16px;
+    resize: none;
 }
+
+.label-form-input-settings,
+.textarea-form-input-settings {
+    border: 0;
+    font-family: var(--FontDefaultRoboto);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 1%;
+    width: 100%;
+}
+
+.label-form-input-settings:focus,
+.textarea-form-input-settings:focus {
+    outline: 0;
+}
+
+.fieldset-settings:has(input:focus),
+.fieldset-textarea-settings:has(textarea:focus) {
+    border-color: var(--StudioBlueColor);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fieldset-settings:has(input:focus) .form-icon {
+    fill: var(--StudioBlueColor);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
 
 .label-form-textarea-settings {
     border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4%;
+    border-radius: 4px;
     width: 448px;
     height: 120px;
 }
 
-.username-icon {
-    position: relative;
-    top: 30px;
-    left: 15px;
+.form-icon {
+    fill: var(--MainBlackColor);
+    margin-top: 9px;
+    margin-left: 14px;
+    margin-right: 10px;
 }
 
 .align-items-center {
@@ -680,7 +729,7 @@ h1 {
     width: 170px;
     height: 92px;
     border: solid 1px var(--SecondGreyColorLighter);
-    border-radius: 4%;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -833,11 +882,13 @@ h1 {
     flex-direction: row;
     gap: 12px
 }
+
 .newsletter-container {
     display: flex;
     flex-direction: column;
     margin-left: 7px;
 }
+
 .newsletter-send-form {
     width: 358px;
     height: 50px;
@@ -849,7 +900,7 @@ h1 {
     letter-spacing: 3%;
     background-color: transparent;
     border: 1px solid rgba(117, 117, 117, 0.3);
-    border-radius: 4%;
+    border-radius: 4px;
     padding: 0 0 0 16px;
 }
 
@@ -860,7 +911,7 @@ h1 {
     background-color: var(--StudioBlueColor);
     color: var(--MainWhiteColor);
     border: 0;
-    border-radius: 4%;
+    border-radius: 4px;
     font-family: var(--FontDefaultRoboto);
     font-size: 16px;
     font-weight: 700;
@@ -879,8 +930,9 @@ h1 {
 .icon-send-paperfly {
     fill: var(--MainWhiteColor);
     margin-left: 24px;
- 
+
 }
+
 .footer-social-media-icon-settings {
     display: flex;
     justify-content: center;
@@ -973,8 +1025,9 @@ h1 {
     flex-basis: calc((100%-2*30px)/3);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   
+
 }
+
 .portfolio-box-overlay {
     position: relative;
     overflow: hidden;
