@@ -470,7 +470,8 @@ h1 {
     outline: 0;
 }
 
-.fieldset-settings:has(input:focus),
+
+.fieldset-textarea-settings:has(textarea:hover), 
 .fieldset-textarea-settings:has(textarea:focus) {
     border-color: var(--StudioBlueColor);
     transition-duration: 250ms;
@@ -478,7 +479,7 @@ h1 {
 }
 
 .fieldset-settings:has(input:hover),
-.fieldset-textarea-settings:has(textarea:hover) {
+.fieldset-settings:has(input:focus) {
     border-color: var(--StudioBlueColor);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
