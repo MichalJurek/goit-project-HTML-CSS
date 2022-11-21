@@ -349,8 +349,9 @@ h1 {
     border: none;
     padding: 0;
     margin: 0;
-    
+
 }
+
 .justify-center {
     display: flex;
     justify-content: center;
@@ -398,8 +399,7 @@ h1 {
     fill: var(--MainWhiteColor);
 }
 
-
-.form-terms-and-conditions-settings input:checked ~ .custom-checkbox {
+.form-terms-and-conditions-settings input:checked~.custom-checkbox {
     background-color: var(--StudioBlueColor);
     border: none;
     transition-duration: 250ms;
@@ -471,7 +471,7 @@ h1 {
 }
 
 
-.fieldset-textarea-settings:has(textarea:hover), 
+.fieldset-textarea-settings:has(textarea:hover),
 .fieldset-textarea-settings:has(textarea:focus) {
     border-color: var(--StudioBlueColor);
     transition-duration: 250ms;
