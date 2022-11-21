@@ -390,37 +390,19 @@ h1 {
 }
 
 .checkmark {
-    position: absolute;
+    position: relative;
     left: 3px;
-    top: 3px;
+    top: -6px;
     fill: var(--MainWhiteColor);
 }
 
-.form-terms-and-conditions-settings input:checked ~ .custom-checkbox, .checkmark {
+.form-terms-and-conditions-settings input:checked ~ .custom-checkbox {
     background-color: var(--StudioBlueColor);
     border: none;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*
-.checkmark {
-    position: absolute;
-    left: 0px;
-    top: 1px;
-    fill: palevioletred;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form-terms-and-conditions-settings input:checked ~ .checkmark {
-    position: absolute;
-    left: 0px;
-    top: 1px;
-    fill: var(--MainWhiteColor);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-*/
 .form-terms-and-conditions-link-settings {
     font-family: var(--FontDefaultRoboto);
     font-size: 14px;
