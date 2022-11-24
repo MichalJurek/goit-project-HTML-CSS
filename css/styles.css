@@ -271,7 +271,6 @@ h1 {
     position: absolute;
     width: 528px;
     height: 581px;
-    top: 21px;
     top: calc((100%- 581px)/2);
     bottom: calc((100% - 581px)/2);
     left: calc((100% - 528px)/2);
@@ -289,7 +288,6 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .close-button {
@@ -349,7 +347,7 @@ h1 {
     border: none;
     padding: 0;
     margin: 0;
-
+    justify-content: center;
 }
 
 .justify-center {
@@ -366,10 +364,11 @@ h1 {
     line-height: 24px;
     letter-spacing: 3%;
     color: var(--MainGreyColor);
-    justify-content: center;
     align-items: center;
     margin-top: 20px;
     cursor: pointer;
+    justify-content: center;
+    left: 12px;
     user-select: none;
 }
 
@@ -387,7 +386,8 @@ h1 {
     border: 1px solid var(--MainBlackColor);
     border-radius: 2px;
     position: absolute;
-    left: 54px;
+    left: 55px;
+    top: 4px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -469,7 +469,6 @@ h1 {
 .textarea-form-input-settings:focus {
     outline: 0;
 }
-
 
 .fieldset-textarea-settings:has(textarea:hover),
 .fieldset-textarea-settings:has(textarea:focus) {
@@ -652,12 +651,9 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 0;
-
     background-color: rgba(47, 48, 58, 0.8);
     width: 370px;
     height: 70px;
-
-
 }
 
 .main-section-our-team-heading,
