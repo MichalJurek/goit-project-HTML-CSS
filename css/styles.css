@@ -19,6 +19,17 @@ body {
     list-style: none;
 }
 
+h1 {
+    color: var(--MainWhiteColor);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
 .container {
     max-width: 1200px;
     width: 100%;
@@ -203,8 +214,7 @@ body {
 }
 
 .main-button-place {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(255, 255, 255, 0)),
-        url("../images/backgroundteamimage.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(255, 255, 255, 0)), url("../images/backgroundteamimage.jpg");
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -214,17 +224,6 @@ body {
     height: 600px;
     max-height: 100%;
     margin: 0;
-}
-
-h1 {
-    color: var(--MainWhiteColor);
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
 }
 
 .main-button {
@@ -370,7 +369,6 @@ h1 {
     cursor: pointer;
     justify-content: center;
     left: 12px;
-    user-select: none;
 }
 
 .form-terms-and-conditions-settings input {
