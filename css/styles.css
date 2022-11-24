@@ -3,11 +3,13 @@
     --MainBlackColor: rgba(33, 33, 33, 1);
     --MainWhiteColor: rgba(255, 255, 255, 1);
     --MainGreyColor: rgba(117, 117, 117, 1);
-    --SecondGreyColorLighter: rgba(175, 177, 184, 1);
+    --SecondGreyColorShadow: rgba(175, 177, 184, 1);
     --BacgroundGafitColor: rgba(47, 48, 58, 1);
     --BacgroundLightGafitColor: rgba(245, 244, 250, 1);
     --FontLogoRaleway: font-family: "Raleway", sans-serif;
     --FontDefaultRoboto: font-family: "Roboto", sans-serif;
+    --MainTransition: cubic-bezier(0.4, 0, 0.2, 1);
+    --MainBorderRadius4px: 4px;
 }
 
 body {
@@ -71,7 +73,7 @@ body {
     letter-spacing: 0.03em;
     text-decoration: none;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .header-logo-right:hover,
@@ -101,7 +103,7 @@ body {
     color: var(--MainBlackColor);
     text-decoration: none;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .header-links:hover,
@@ -151,7 +153,7 @@ body {
     color: var(--StudioBlueColor);
     text-decoration: none;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .header-portfolio:hover,
@@ -174,14 +176,14 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .envelope-icon,
 .icon-smartphone {
     fill: var(--MainGreyColor);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .gap-10-px {
@@ -236,9 +238,8 @@ h1 {
     width: 200px;
     height: 50px;
     border: 0;
-    border-radius: 4px;
+    border-radius: var(--MainBorderRadius4px);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     text-transform: none;
     cursor: pointer;
 }
@@ -264,7 +265,7 @@ h1 {
     visibility: hidden;
     pointer-events: none;
     transition-duration: 500ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .modal {
@@ -275,13 +276,13 @@ h1 {
     bottom: calc((100% - 581px)/2);
     left: calc((100% - 528px)/2);
     right: calc((100% - 528px)/2);
-    border-radius: 4px;
+    border-radius: var(--MainBorderRadius4px);
     background: var(--MainWhiteColor);
     opacity: inherit;
     visibility: inherit;
     transition-property: visibility, opacity;
     transition-duration: 500ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -321,7 +322,7 @@ h1 {
     display: flex;
     position: relative;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+    border-radius: var(--MainBorderRadius4px);
     width: 448px;
     height: 40px;
     margin-top: 28px;
@@ -334,7 +335,7 @@ h1 {
     display: flex;
     position: relative;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+    border-radius: var(--MainBorderRadius4px);
     width: 448px;
     height: 120px;
     margin-top: 28px;
@@ -389,7 +390,7 @@ h1 {
     left: 55px;
     top: 4px;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .checkmark {
@@ -403,7 +404,7 @@ h1 {
     background-color: var(--StudioBlueColor);
     border: none;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .form-terms-and-conditions-link-settings {
@@ -428,9 +429,8 @@ h1 {
     border: 0;
     padding: 0;
     margin-top: 30px;
-    border-radius: 4px;
+    border-radius: var(--MainBorderRadius4px);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     text-transform: none;
     cursor: pointer;
 }
@@ -474,26 +474,26 @@ h1 {
 .fieldset-textarea-settings:has(textarea:focus) {
     border-color: var(--StudioBlueColor);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .fieldset-settings:has(input:hover),
 .fieldset-settings:has(input:focus) {
     border-color: var(--StudioBlueColor);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .fieldset-settings:has(input:focus) .form-icon,
 .fieldset-settings:has(input:hover) .form-icon {
     fill: var(--StudioBlueColor);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .label-form-textarea-settings {
     border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+    border-radius: var(--MainBorderRadius4px);
     width: 448px;
     height: 120px;
 }
@@ -543,7 +543,7 @@ h1 {
     width: 270px;
     height: 120px;
     border: 0;
-    border-radius: 4px;
+    border-radius: var(--MainBorderRadius4px);
     background-color: var(--BacgroundLightGafitColor);
 }
 
@@ -552,7 +552,7 @@ h1 {
 .icon-astronaut,
 .icon-antenna {
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .icon-antenna:hover,
@@ -733,9 +733,9 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: var(--SecondGreyColorLighter);
+    fill: var(--SecondGreyColorShadow);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .social-links:hover,
@@ -778,14 +778,14 @@ h1 {
 .our-customer-list-icon-settings-foster-peters {
     width: 170px;
     height: 92px;
-    border: solid 1px var(--SecondGreyColorLighter);
-    border-radius: 4px;
+    border: solid 1px var(--SecondGreyColorShadow);
+    border-radius: var(--MainBorderRadius4px);
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: var(--SecondGreyColorLighter);
+    fill: var(--SecondGreyColorShadow);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .our-customer-list-icon-settings:hover,
@@ -835,7 +835,7 @@ h1 {
     letter-spacing: 0.03em;
     text-decoration: none;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .header-logo-right-down:hover,
@@ -865,7 +865,7 @@ h1 {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .footer-email:hover,
@@ -901,7 +901,7 @@ h1 {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .footer-tel:hover,
@@ -950,18 +950,18 @@ h1 {
     letter-spacing: 3%;
     background-color: transparent;
     border: 1px solid rgba(117, 117, 117, 0.3);
-    border-radius: 4px;
+    border-radius: var(--MainBorderRadius4px);
     padding: 0 0 0 16px;
     outline: 0;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .newsletter-send-form:focus,
 .newsletter-send-form:hover {
     border-color: var(--StudioBlueColor);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .newsletter-button {
@@ -971,7 +971,7 @@ h1 {
     background-color: var(--StudioBlueColor);
     color: var(--MainWhiteColor);
     border: 0;
-    border-radius: 4px;
+    border-radius: var(--MainBorderRadius4px);
     font-family: var(--FontDefaultRoboto);
     font-size: 16px;
     font-weight: 700;
@@ -1010,7 +1010,7 @@ h1 {
     background-color: rgba(255, 255, 255, 0.1);
     fill: var(--MainWhiteColor);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 }
 
 .footer-social-links:hover,
@@ -1044,15 +1044,14 @@ h1 {
     letter-spacing: 0.03em;
     background-color: var(--BacgroundLightGafitColor);
     border: 0;
-    border-radius: 4px;
+    border-radius: var(--MainBorderRadius4px);
     text-decoration: none;
-    border-radius: 4px;
     text-transform: none;
     text-align: center;
     cursor: pointer;
     padding: 6px 20px 6px 20px;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 
 }
 
@@ -1084,7 +1083,7 @@ h1 {
     background-color: var(--MainWhiteColor);
     flex-basis: calc((100%-2*30px)/3);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
 
 }
 
@@ -1102,7 +1101,7 @@ h1 {
     height: 294px;
     transform: translatey(100%);
     transition: transform 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--MainTransition);
     background-color: rgba(33, 150, 243, 0.9);
     padding-top: 49px;
     padding-left: 24px;
