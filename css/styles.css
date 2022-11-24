@@ -152,6 +152,7 @@ h1 {
     border: 0;
     gap: 50px;
     align-items: center;
+    justify-content: center;
 }
 
 .header-portfolio {
