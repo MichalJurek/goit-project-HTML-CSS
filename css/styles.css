@@ -87,7 +87,7 @@ h1 {
     text-decoration: none;
 }
 
-.header-logo-right { /* main-logo__logo-blue */
+.header-logo-right { /* main-logo__logo-right */
     font-family: var(--FontLogoRaleway);
     font-style: normal;
     font-size: 26px;
@@ -101,7 +101,7 @@ h1 {
 }
 
 .header-logo-right:hover,
-.header-logo-right:focus {
+.header-logo-right:focus { /* main-logo__logo-right--focus-studio-blue */
     color: var(--StudioBlueColor);
     cursor: pointer;
 }
