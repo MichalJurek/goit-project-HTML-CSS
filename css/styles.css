@@ -823,29 +823,22 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
 /* nowy blok ------------ member-figure ---------- */
 /* /\--------------------ourteam-block-------------------------- /\ */
 
-.our-customer-section {
+/* \/--------------------ourcustomers-block-------------------------- \/ */
+
+.ourcustomers-block {
     display: flex;
     flex-direction: column;
     height: 372px;
     max-height: 100%;
     justify-content: center;
-    align-items: center;
     gap: 50px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    border: 0;
 }
 
-.no-margin {
-    margin: 0px auto;
-}
-
-.our-customer-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0;
-    gap: 30px;
-}
-
-.our-customer-section-heading {
+.ourcustomers-block__heading {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -854,8 +847,15 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     margin: 0 auto;
 }
 
-.our-customer-list-icon-settings,
-.our-customer-list-icon-settings-foster-peters {
+.ourcustomers-block__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    gap: 30px;
+}
+
+.ourcustomers-block__icon {
     width: 170px;
     height: 92px;
     border: solid 1px var(--SecondGreyColorShadow);
@@ -868,13 +868,13 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     transition-timing-function: var(--MainTransition);
 }
 
-.our-customer-list-icon-settings:hover,
-.our-customer-list-icon-settings:focus,
-.our-customer-list-icon-settings-foster-peters:hover {
+.ourcustomers-block__icon:hover {
     fill: var(--StudioBlueColor);
     border-color: var(--StudioBlueColor);
     cursor: pointer;
 }
+
+/* /\--------------------ourcustomers-block-------------------------- /\ */
 
 .footer {
     background-color: var(--BacgroundGafitColor);
