@@ -37,6 +37,10 @@ h1 {
     border: 0;
 }
 
+.no-margin {
+    margin: 0px auto;
+}
+
 .gap-30-px {
     /* advantages-block__list--gap30px */
     display: flex;
@@ -57,6 +61,12 @@ h1 {
     gap: 50px;
     height: 1548px;
     margin: 0;
+}
+
+.gap-16-px {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 /*
@@ -696,7 +706,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
 /* /\--------------------whatwedo-block-------------------------- /\ */
 
 /* \/--------------------ourteam-block-------------------------- \/ */
-.main-section-our-team {
+.ourteam-block {
     display: flex;
     flex-direction: column;
     background-color: var(--BacgroundLightGafitColor);
@@ -706,10 +716,19 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     align-items: center;
 }
 
+.ourteam-block__sector-settings {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 
-.main-section-our-team-heading,
-.our-customer-section-heading,
-.what-we-do {
+.ourteam-block__heading {
+    text-align: center;
+    margin: 0 auto;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -718,7 +737,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     margin: 0 auto;
 }
 
-.main-section-our-team-list {
+.ourteam-block__list {
     display: flex;
     margin: 0 auto;
     align-items: center;
@@ -726,24 +745,22 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     justify-content: space-between;
 }
 
-.our-team-member-figure {
+/* nowy blok ------------ member-figure ---------- */
+.member-figure {
     display: flex;
     flex-direction: column;
     margin: 0;
     background-color: var(--MainWhiteColor);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.gap-16-px {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.member-figure__settings {
+    margin: 0;
 }
 
-.figcaption {
+.member-figure__figcaption {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -753,7 +770,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     max-height: 100%;
 }
 
-.team-name {
+.member-figure__name {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.18;
@@ -761,7 +778,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     margin: 0;
 }
 
-.team-role {
+.member-figure__role {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.18;
@@ -770,14 +787,14 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     margin: 0 auto;
 }
 
-.social-media-icon-settings {
+.member-figure__social-links-settings {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.social-links {
+.member-figure__icon {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -789,8 +806,8 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     transition-timing-function: var(--MainTransition);
 }
 
-.social-links:hover,
-.social-links:focus {
+.member-figure__icon:hover,
+.member-figure__icon:focus {
     border-radius: 50%;
     background-color: var(--StudioBlueColor);
     fill: var(--MainWhiteColor);
@@ -802,6 +819,8 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     height: 44px;
     cursor: pointer;
 }
+/* nowy blok ------------ member-figure ---------- */
+/* /\--------------------ourteam-block-------------------------- /\ */
 
 .our-customer-section {
     display: flex;
@@ -823,6 +842,15 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     justify-content: center;
     padding: 0;
     gap: 30px;
+}
+
+.our-customer-section-heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .our-customer-list-icon-settings,
