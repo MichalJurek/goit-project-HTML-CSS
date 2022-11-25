@@ -44,6 +44,21 @@ h1 {
     gap: 30px;
 }
 
+.gap-50-px {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.gap-50-px-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    height: 1548px;
+    margin: 0;
+}
+
 /*
 .freespace-in-centrum-menu {
     display: flex;
@@ -623,53 +638,43 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     letter-spacing: 0.03em;
 }
 
-/* /\--------------------advantagesblock-------------------------- /\ */
+/* /\--------------------advantages-block-------------------------- /\ */
 
-.main-section-our-team {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--BacgroundLightGafitColor);
-    height: 648px;
-    max-height: 100%;
-    justify-content: center;
-    align-items: center;
-}
+/* \/--------------------whatwedo-block-------------------------- \/ */
 
-.gap-50-px {
+.whatwedo-block {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-.gap-50-px-second {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 50px;
-    height: 1548px;
-    margin: 0;
-}
-
-.what-we-do {
+.whatwedo-block__heading {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
     text-align: center;
     margin: 0 auto;
 }
 
-.what-we-do-presentation {
+.whatwedo-block__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0;
     margin: 0;
     list-style: none;
+    gap: 30px;
 }
 
-.what-we-do-presentation-box {
+.whatwedo-block__image {
     position: relative;
     display: flex;
 }
 
-.what-we-do-presentation-label-settings {
+.whatwedo-block__label {
     position: absolute;
     bottom: 0;
     font-family: var(--FontDefaultRoboto);
@@ -687,6 +692,20 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     width: 370px;
     height: 70px;
 }
+
+/* /\--------------------whatwedo-block-------------------------- /\ */
+
+/* \/--------------------ourteam-block-------------------------- \/ */
+.main-section-our-team {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--BacgroundLightGafitColor);
+    height: 648px;
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .main-section-our-team-heading,
 .our-customer-section-heading,
