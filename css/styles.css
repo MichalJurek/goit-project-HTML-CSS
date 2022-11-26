@@ -903,7 +903,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
 
 
 /************** PORTFOLIO PAGE **************/
-/* /\--------------------portfolio-block-------------------------- /\ */
+/* \/--------------------portfolio-block-------------------------- \/ */
 
 
 .portfolio {
@@ -1035,6 +1035,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     height: 101px;
     gap: 4px;
 }
+
 .cards-block__heading {
     font-weight: 700;
     font-size: 18px;
@@ -1052,7 +1053,8 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     margin: 0 0 0 24px;
 }
 
-/* /\  nowy blok wewnętrzny --------------------cards-------------------------- /\ */
+/* /\  nowy blok wewnętrzny --------------------cards-block-------------------------- /\ */
+/* /\--------------------portfolio-block-------------------------- /\ */
 .footer {
     background-color: var(--BacgroundGafitColor);
     font-style: normal;
@@ -1278,7 +1280,3 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     height: 44px;
     cursor: pointer;
 }
-
-
-
-
