@@ -742,10 +742,6 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
 }
 
 .ourteam-block__sector-settings {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0;
-    border: 0;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -857,10 +853,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     max-height: 100%;
     justify-content: center;
     gap: 50px;
-    max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
-    border: 0;
 }
 
 .ourcustomers-block__heading {
@@ -913,10 +906,6 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     display: flex;
     flex-direction: column;
     gap: 50px;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    border: 0;
 }
 
 .portfolio__button-list {
@@ -960,9 +949,8 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
 .cards-block {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    justify-content: center;
     align-items: center;
     gap: 30px;
     column-gap: 30px;
