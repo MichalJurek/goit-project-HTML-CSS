@@ -76,8 +76,8 @@ h1 {
     gap: 93px;
 }
 
-/* V --------------------header-------------------------- V */
-.header-block {
+/* V --------------------topmenu-------------------------- V */
+.topmenu-block {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -87,8 +87,7 @@ h1 {
     border-bottom: solid 1px #ECECEC;
 }
 
-.header-block__space-between {
-    /* zamiana na central-gap */
+.topmenu-block__space-between {
     display: flex;
     margin: 0;
     justify-content: space-between;
@@ -132,9 +131,9 @@ h1 {
 }
 
 /* /\ nowy wewnętrzny blok -------------------logo-block --------------------/\ */
-/* \/ nowy wewnętrzny blok -------------------menu-block --------------------\/ */
+/* \/ nowy wewnętrzny blok -------------------nav-block --------------------\/ */
 
-.menu-block {
+.nav-block {
     display: flex;
     align-items: center;
     height: 80px;
@@ -144,7 +143,7 @@ h1 {
     gap: 46px
 }
 
-.menu-block__element {
+.nav-block__element {
     font-family: var(--FontDefaultRoboto);
     font-style: normal;
     position: relative;
@@ -158,13 +157,13 @@ h1 {
     transition-timing-function: var(--MainTransition);
 }
 
-.menu-block__element:hover,
-.menu-block__element:focus {
+.nav-block__element:hover,
+.nav-block__element:focus {
     color: var(--StudioBlueColor);
     cursor: pointer;
 }
 
-.menu-block__element--underline::after {
+.nav-block__element--underline::after {
     position: absolute;
     height: 4px;
     width: 100%;
@@ -174,7 +173,7 @@ h1 {
     left: 0;
     bottom: -32px;
 }
-/* /\ wewnętrzny blok -------------------menu-block --------------------/\ */
+/* /\ wewnętrzny blok -------------------nav-block --------------------/\ */
 /* \/ nowy wewnętrzny blok -------------------nav-block --------------------\/ */
 
 .contact-block {
