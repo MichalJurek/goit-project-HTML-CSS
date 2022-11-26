@@ -71,23 +71,13 @@ h1 {
     gap: 16px;
 }
 
-/*
-.freespace-in-centrum-menu {
-    display: flex;
-    margin: 0;
-    justify-content: space-between;
-}
-*/
 .logo-headerlinks-container {
     display: flex;
     gap: 93px;
 }
 
-/* V --------------------header-------------------------- V 
-
-/* /\ --------------------header-------------------------- /\ */
-.page-header {
-    /*ok*/
+/* V --------------------header-------------------------- V */
+.header-block {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -97,27 +87,21 @@ h1 {
     border-bottom: solid 1px #ECECEC;
 }
 
-.freespace-in-centrum-menu {
+.header-block__space-between {
     /* zamiana na central-gap */
     display: flex;
     margin: 0;
     justify-content: space-between;
 }
+/* \/ nowy wewnętrzny blok -------------------logo-block --------------------\/ */
 
-.logo-headerlinks-container {
-    /* zamiana na gap-betwen-links */
+.logo-block {
     display: flex;
     gap: 93px;
-}
-
-.logo-container {
-    /* page-headr__logo-container */
-    display: flex;
     align-items: center;
 }
 
-.header-logo-blue {
-    /* main-logo__logo-blue */
+.logo-block__blue {
     font-family: var(--FontLogoRaleway);
     font-style: normal;
     font-size: 26px;
@@ -128,8 +112,7 @@ h1 {
     text-decoration: none;
 }
 
-.header-logo-right {
-    /* main-logo__logo-right */
+.logo-block__black {
     font-family: var(--FontLogoRaleway);
     font-style: normal;
     font-size: 26px;
@@ -142,14 +125,16 @@ h1 {
     transition-timing-function: var(--MainTransition);
 }
 
-.header-logo-right:hover,
-.header-logo-right:focus {
-    /* main-logo__logo-right--focus-studio-blue */
+.logo-block__black:hover,
+.logo-block__black:focus {
     color: var(--StudioBlueColor);
     cursor: pointer;
 }
 
-.header-links-container {
+/* /\ nowy wewnętrzny blok -------------------logo-block --------------------/\ */
+/* \/ nowy wewnętrzny blok -------------------menu-block --------------------\/ */
+
+.menu-block {
     display: flex;
     align-items: center;
     height: 80px;
@@ -159,7 +144,7 @@ h1 {
     gap: 46px
 }
 
-.header-links {
+.menu-block__element {
     font-family: var(--FontDefaultRoboto);
     font-style: normal;
     position: relative;
@@ -173,13 +158,13 @@ h1 {
     transition-timing-function: var(--MainTransition);
 }
 
-.header-links:hover,
-.header-links:focus {
+.menu-block__element:hover,
+.menu-block__element:focus {
     color: var(--StudioBlueColor);
     cursor: pointer;
 }
 
-.portfolio-portfolio-activ-underline::after {
+.menu-block__element--underline::after {
     position: absolute;
     height: 4px;
     width: 100%;
@@ -189,20 +174,10 @@ h1 {
     left: 0;
     bottom: -32px;
 }
+/* /\ wewnętrzny blok -------------------menu-block --------------------/\ */
+/* \/ nowy wewnętrzny blok -------------------nav-block --------------------\/ */
 
-.index-agencja-activ-underline::after {
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    content: "";
-    background-color: var(--StudioBlueColor);
-    border-radius: 2px;
-    left: 0;
-    bottom: -32px;
-}
-
-
-.header-links-contact-container {
+.contact-block {
     display: flex;
     margin: 0;
     border: 0;
@@ -210,6 +185,39 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+
+.contact-block__element {
+    font-family: var(--FontDefaultRoboto);
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    color: var(--MainGreyColor);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: var(--MainTransition);
+    display: flex;
+    gap: 10px;
+}
+
+.contact-block__element:hover,
+.contact-block__element:focus,
+.contact-block__element:hover .icon-smartphone,
+.contact-block__element:focus .icon-smartphone,
+.contact-block__element:hover .envelope-icon,
+.contact-block__element:focus .envelope-icon {
+    fill: var(--StudioBlueColor);
+    color: var(--StudioBlueColor);
+    cursor: pointer;
+}
+
+
+/* /\ wewnętrzny blok -------------------nav-block --------------------/\ */
+
+/* /\ --------------------header-------------------------- /\ */
+
+
 
 .header-portfolio {
     font-family: var(--FontDefaultRoboto);
@@ -230,23 +238,6 @@ h1 {
     cursor: pointer;
 }
 
-.header-links-contact-container {
-    display: flex;
-}
-
-.header-links-contact {
-    font-family: var(--FontDefaultRoboto);
-    font-style: normal;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    color: var(--MainGreyColor);
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    transition-duration: 250ms;
-    transition-timing-function: var(--MainTransition);
-}
-
 .envelope-icon,
 .icon-smartphone {
     fill: var(--MainGreyColor);
@@ -257,17 +248,6 @@ h1 {
 .gap-10-px {
     display: flex;
     gap: 10px;
-}
-
-.header-links-contact:hover,
-.header-links-contact:focus,
-.header-links-contact:hover .icon-smartphone,
-.header-links-contact:focus .icon-smartphone,
-.header-links-contact:hover .envelope-icon,
-.header-links-contact:focus .envelope-icon {
-    fill: var(--StudioBlueColor);
-    color: var(--StudioBlueColor);
-    cursor: pointer;
 }
 
 .main-button-place {
