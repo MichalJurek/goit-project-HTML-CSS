@@ -71,12 +71,12 @@ h1 {
     gap: 16px;
 }
 
-.logo-headerlinks-container {
+.gap-10-px {
     display: flex;
-    gap: 93px;
+    gap: 10px;
 }
 
-/* V --------------------topmenu-------------------------- V */
+/* V --------------------topmenu-block------------------------- V */
 .topmenu-block {
     box-sizing: border-box;
     display: flex;
@@ -92,6 +92,7 @@ h1 {
     margin: 0;
     justify-content: space-between;
 }
+
 /* \/ nowy wewnętrzny blok -------------------logo-block --------------------\/ */
 
 .logo-block {
@@ -173,8 +174,9 @@ h1 {
     left: 0;
     bottom: -32px;
 }
+
 /* /\ wewnętrzny blok -------------------nav-block --------------------/\ */
-/* \/ nowy wewnętrzny blok -------------------nav-block --------------------\/ */
+/* \/ nowy wewnętrzny blok -------------------contact-block --------------------\/ */
 
 .contact-block {
     display: flex;
@@ -200,6 +202,13 @@ h1 {
     gap: 10px;
 }
 
+.envelope-icon,
+.icon-smartphone {
+    fill: var(--MainGreyColor);
+    transition-duration: 250ms;
+    transition-timing-function: var(--MainTransition);
+}
+
 .contact-block__element:hover,
 .contact-block__element:focus,
 .contact-block__element:hover .icon-smartphone,
@@ -212,11 +221,49 @@ h1 {
 }
 
 
-/* /\ wewnętrzny blok -------------------nav-block --------------------/\ */
+/* /\ wewnętrzny blok -------------------contact-block --------------------/\ */
+/* /\ --------------------topmenu-block-------------------------- /\ */
 
-/* /\ --------------------header-------------------------- /\ */
+/* \/ --------------------header-block-------------------------- \/ */
+/* nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako header */
+
+.header-block {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(255, 255, 255, 0)), url("../images/backgroundteamimage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    max-height: 100%;
+    margin: 0;
+}
+
+.header-block__button {
+    color: var(--MainWhiteColor);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: var(--StudioBlueColor);
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    border-radius: var(--MainBorderRadius4px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    text-transform: none;
+    cursor: pointer;
+}
+
+.header-block__button:hover,
+.header-block__button:focus {
+    cursor: pointer;
+}
 
 
+/* /\ --------------------header-block-------------------------- /\ */
 
 .header-portfolio {
     font-family: var(--FontDefaultRoboto);
@@ -234,53 +281,6 @@ h1 {
 .header-portfolio:hover,
 .header-portfolio:focus {
     color: var(--StudioBlueColor);
-    cursor: pointer;
-}
-
-.envelope-icon,
-.icon-smartphone {
-    fill: var(--MainGreyColor);
-    transition-duration: 250ms;
-    transition-timing-function: var(--MainTransition);
-}
-
-.gap-10-px {
-    display: flex;
-    gap: 10px;
-}
-
-.main-button-place {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(255, 255, 255, 0)), url("../images/backgroundteamimage.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 600px;
-    max-height: 100%;
-    margin: 0;
-}
-
-.main-button {
-    color: var(--MainWhiteColor);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    background-color: var(--StudioBlueColor);
-    text-decoration: none;
-    width: 200px;
-    height: 50px;
-    border: 0;
-    border-radius: var(--MainBorderRadius4px);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    text-transform: none;
-    cursor: pointer;
-}
-
-.main-button:hover,
-.main-button:focus {
     cursor: pointer;
 }
 
@@ -352,6 +352,7 @@ h1 {
 }
 
 /* V  nowy blok wewnętrzny --------------------fieldset-------------------------- V */
+
 .fieldset {
     display: flex;
     position: relative;
@@ -576,7 +577,6 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     flex-direction: column;
     align-items: center;
 }
-
 
 .advatages-block__sector-settings {
     display: flex;
