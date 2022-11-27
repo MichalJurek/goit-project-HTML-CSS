@@ -37,8 +37,9 @@ h1 {
     border: 0;
 }
 
-/* V --------------------topmenu-block------------------------- V */
-.topmenu-block {
+/* V --------------------menu-------------------------- V */
+/* nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako menu */
+.menu {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -48,21 +49,21 @@ h1 {
     border-bottom: solid 1px #ECECEC;
 }
 
-.topmenu-block__space-between {
+.menu__space-between {
     display: flex;
     margin: 0;
     justify-content: space-between;
 }
 
-/* \/ nowy wewnętrzny blok -------------------logo-block --------------------\/ */
+/* \/ nowy wewnętrzny blok -------------------logo --------------------\/ */
 
-.logo-block {
+.logo {
     display: flex;
     gap: 93px;
     align-items: center;
 }
 
-.logo-block__blue {
+.logo__blue {
     font-family: var(--FontLogoRaleway);
     font-style: normal;
     font-size: 26px;
@@ -73,7 +74,7 @@ h1 {
     text-decoration: none;
 }
 
-.logo-block__black {
+.logo__black {
     font-family: var(--FontLogoRaleway);
     font-style: normal;
     font-size: 26px;
@@ -86,7 +87,7 @@ h1 {
     transition-timing-function: var(--MainTransition);
 }
 
-.logo-block__white {
+.logo__white {
     font-family: var(--FontLogoRaleway);
     font-style: normal;
     font-size: 26px;
@@ -99,16 +100,16 @@ h1 {
     transition-timing-function: var(--MainTransition);
 }
 
-.logo-block__black:hover,
-.logo-block__black:focus {
+.logo__black:hover,
+.logo__black:focus {
     color: var(--StudioBlueColor);
     cursor: pointer;
 }
 
-/* /\ nowy wewnętrzny blok -------------------logo-block --------------------/\ */
-/* \/ nowy wewnętrzny blok -------------------nav-block --------------------\/ */
+/* /\ nowy wewnętrzny blok -------------------logo --------------------/\ */
+/* \/ nowy wewnętrzny blok -------------------nav --------------------\/ */
 
-.nav-block {
+.nav {
     display: flex;
     align-items: center;
     height: 80px;
@@ -118,7 +119,7 @@ h1 {
     gap: 46px
 }
 
-.nav-block__element {
+.nav__element {
     font-family: var(--FontDefaultRoboto);
     font-style: normal;
     position: relative;
@@ -132,13 +133,13 @@ h1 {
     transition-timing-function: var(--MainTransition);
 }
 
-.nav-block__element:hover,
-.nav-block__element:focus {
+.nav__element:hover,
+.nav__element:focus {
     color: var(--StudioBlueColor);
     cursor: pointer;
 }
 
-.nav-block__element--underline::after {
+.nav__element--underline::after {
     position: absolute;
     height: 4px;
     width: 100%;
@@ -149,10 +150,10 @@ h1 {
     bottom: -32px;
 }
 
-/* /\ wewnętrzny blok -------------------nav-block --------------------/\ */
-/* \/ nowy wewnętrzny blok -------------------contact-block --------------------\/ */
+/* /\ wewnętrzny blok -------------------nav --------------------/\ */
+/* \/ nowy wewnętrzny blok -------------------contact --------------------\/ */
 
-.contact-block {
+.contact {
     display: flex;
     margin: 0;
     border: 0;
@@ -161,7 +162,7 @@ h1 {
     justify-content: center;
 }
 
-.contact-block__element {
+.contact__element {
     font-family: var(--FontDefaultRoboto);
     font-style: normal;
     font-size: 14px;
@@ -176,32 +177,32 @@ h1 {
     gap: 10px;
 }
 
-.envelope-icon,
-.icon-smartphone {
+.contact__envelope-icon,
+.contact__icon-smartphone {
     fill: var(--MainGreyColor);
     transition-duration: 250ms;
     transition-timing-function: var(--MainTransition);
 }
 
-.contact-block__element:hover,
-.contact-block__element:focus,
-.contact-block__element:hover .icon-smartphone,
-.contact-block__element:focus .icon-smartphone,
-.contact-block__element:hover .envelope-icon,
-.contact-block__element:focus .envelope-icon {
+.contact__element:hover,
+.contact__element:focus,
+.contact__element:hover .icon-smartphone,
+.contact__element:focus .icon-smartphone,
+.contact__element:hover .envelope-icon,
+.contact__element:focus .envelope-icon {
     fill: var(--StudioBlueColor);
     color: var(--StudioBlueColor);
     cursor: pointer;
 }
 
 
-/* /\ wewnętrzny blok -------------------contact-block --------------------/\ */
-/* /\ --------------------topmenu-block-------------------------- /\ */
+/* /\ wewnętrzny blok -------------------contact --------------------/\ */
+/* /\ --------------------menu-------------------------- /\ */
 
-/* \/ --------------------header-block-------------------------- \/ */
+/* \/ --------------------header-------------------------- \/ */
 /* nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako header */
 
-.header-block {
+.header {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(255, 255, 255, 0)), url("../images/backgroundteamimage.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -214,7 +215,7 @@ h1 {
     margin: 0;
 }
 
-.header-block__button {
+.header__button {
     color: var(--MainWhiteColor);
     font-size: 16px;
     font-weight: 700;
@@ -231,36 +232,16 @@ h1 {
     cursor: pointer;
 }
 
-.header-block__button:hover,
-.header-block__button:focus {
+.header__button:hover,
+.header__button:focus {
     cursor: pointer;
 }
 
-
-/* /\ --------------------header-block-------------------------- /\ */
-
-.header-portfolio {
-    font-family: var(--FontDefaultRoboto);
-    font-style: normal;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02;
-    color: var(--StudioBlueColor);
-    text-decoration: none;
-    transition-duration: 250ms;
-    transition-timing-function: var(--MainTransition);
-}
-
-.header-portfolio:hover,
-.header-portfolio:focus {
-    color: var(--StudioBlueColor);
-    cursor: pointer;
-}
+/* /\ --------------------header-------------------------- /\ */
 
 /* V --------------------modal-------------------------- V */
 
-.backdrop {
+.modal__backdrop {
     position: fixed;
     left: 0;
     top: 0;
@@ -270,7 +251,7 @@ h1 {
     justify-content: center;
 }
 
-.is-hidden {
+.modal__hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -543,16 +524,16 @@ h1 {
 
 
 
-/* V --------------------advantages-block-------------------------- V 
+/* V --------------------advantages-------------------------- V 
 nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
 
-.advatages-block {
+.advantages {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.advatages-block__sector-settings {
+.advantages__sector-settings {
     display: flex;
     flex-direction: column;
     height: 919px;
@@ -564,7 +545,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     align-items: center;
 }
 
-.advantages-block__list {
+.advantages__list {
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -574,13 +555,13 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     list-style: none;
 }
 
-.advantages-block__card {
+.advantages__card {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.advantage-icons {
+.advantages__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -592,24 +573,18 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     background-color: var(--BacgroundLightGafitColor);
 }
 
-.advantage-icons__icon-item {
+.advantages__icon {
     transition-duration: 250ms;
     transition-timing-function: var(--MainTransition);
 }
 
-.advantage-icons__icon-item:hover,
-.advantage-icons__icon-item:focus,
-.advantage-icons__icon-item:hover,
-.advantage-icons__icon-itemk:focus,
-.advantage-icons__icon-item:hover,
-.advantage-icons__icon-item:focus,
-.advantage-icons__icon-item:hover,
-.advantage-icons__icon-itemt:focus {
+.advantages__icon:hover,
+.advantages__icon:focus {
     fill: var(--StudioBlueColor);
     cursor: pointer;
 }
 
-.advatages-block__headings {
+.advantages__headings {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -618,7 +593,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     border: 0 auto;
 }
 
-.advatages-block__descriptions {
+.advantages__descriptions {
     color: var(--MainGreyColor);
     font-size: 14px;
     font-weight: 400;
@@ -626,17 +601,17 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     letter-spacing: 0.03em;
 }
 
-/* /\--------------------advantages-block-------------------------- /\ */
+/* /\--------------------advantages-------------------------- /\ */
 
-/* \/--------------------whatwedo-block-------------------------- \/ */
+/* \/--------------------middle-section-------------------------- \/ */
 
-.whatwedo-block {
+.middle-section {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-.whatwedo-block__heading {
+.middle-section__heading {
     text-align: center;
     margin: 0 auto;
     font-weight: 700;
@@ -647,7 +622,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     margin: 0 auto;
 }
 
-.whatwedo-block__list {
+.middle-section__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -657,12 +632,12 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     gap: 30px;
 }
 
-.whatwedo-block__image {
+.middle-section__image {
     position: relative;
     display: flex;
 }
 
-.whatwedo-block__label {
+.middle-section__label {
     position: absolute;
     bottom: 0;
     font-family: var(--FontDefaultRoboto);
@@ -681,10 +656,10 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     height: 70px;
 }
 
-/* /\--------------------whatwedo-block-------------------------- /\ */
+/* /\--------------------middle-section-------------------------- /\ */
 
-/* \/--------------------ourteam-block-------------------------- \/ */
-.ourteam-block {
+/* \/--------------------team-section-------------------------- \/ */
+.team-section {
     display: flex;
     flex-direction: column;
     background-color: var(--BacgroundLightGafitColor);
@@ -694,13 +669,13 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     align-items: center;
 }
 
-.ourteam-block__sector-settings {
+.team-section__sector-settings {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-.ourteam-block__heading {
+.team-section__heading {
     text-align: center;
     margin: 0 auto;
     font-weight: 700;
@@ -711,7 +686,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     margin: 0 auto;
 }
 
-.ourteam-block__list {
+.team-section__list {
     display: flex;
     margin: 0 auto;
     align-items: center;
@@ -795,11 +770,11 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
 }
 
 /* nowy blok ------------ member-figure ---------- */
-/* /\--------------------ourteam-block-------------------------- /\ */
+/* /\--------------------team-section-------------------------- /\ */
 
-/* \/--------------------ourcustomers-block-------------------------- \/ */
+/* \/--------------------customers-section-------------------------- \/ */
 
-.ourcustomers-block {
+.customers-section {
     display: flex;
     flex-direction: column;
     height: 372px;
@@ -809,7 +784,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     margin: 0 auto;
 }
 
-.ourcustomers-block__heading {
+.customers-section__heading {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -818,7 +793,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     margin: 0 auto;
 }
 
-.ourcustomers-block__list {
+.customers-section__list {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -826,7 +801,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     gap: 30px;
 }
 
-.ourcustomers-block__icon {
+.customers-section__icon {
     width: 170px;
     height: 92px;
     border: solid 1px var(--SecondGreyColorShadow);
@@ -839,17 +814,17 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     transition-timing-function: var(--MainTransition);
 }
 
-.ourcustomers-block__icon:hover {
+.customers-section__icon:hover {
     fill: var(--StudioBlueColor);
     border-color: var(--StudioBlueColor);
     cursor: pointer;
 }
 
-/* /\--------------------ourcustomers-block-------------------------- /\ */
+/* /\--------------------customers-section-------------------------- /\ */
 
 
-/************** PORTFOLIO PAGE **************/
-/* \/--------------------portfolio-block-------------------------- \/ */
+/**************************** PORTFOLIO PAGE *************************/
+/* \/---------------------------portfolio--------------------------- \/ */
 
 
 .portfolio {
@@ -997,14 +972,10 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
 /* /\  nowy blok wewnętrzny --------------------cards-block-------------------------- /\ */
 /* /\--------------------portfolio-block-------------------------- /\ */
 
-/* \/--------------------footer-block-------------------------- \/ */
+/* \/--------------------footer-------------------------- \/ */
 
 
-
-
-/* /\--------------------footer-block-------------------------- /\ */
-
-.footer-block {
+.footer {
     background-color: var(--BacgroundGafitColor);
     font-style: normal;
     display: flex;
@@ -1014,7 +985,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     padding-top: 70px;
 }
 
-.logo-block__white {
+.logo__white {
     font-family: var(--FontLogoRaleway);
     font-style: normal;
     font-size: 26px;
@@ -1027,13 +998,13 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     transition-timing-function: var(--MainTransition);
 }
 
-.logo-block__white:hover,
-.logo-block__white:focus {
+.logo__white:hover,
+.logo__white:focus {
     color: var(--StudioBlueColor);
     cursor: pointer;
 }
 
-.footer-block__list {
+.footer__list {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -1043,7 +1014,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     margin-top: 20px;
 }
 
-.footer-block__adress {
+.footer__adress {
     font-family: var(--FontDefaultRoboto);
     font-style: normal;
     font-weight: 400;
@@ -1054,7 +1025,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     text-decoration: none;
 }
 
-.footer-block__email {
+.footer__email {
     font-family: var(--FontDefaultRoboto);
     font-style: normal;
     font-weight: 400;
@@ -1067,13 +1038,13 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     transition-timing-function: var(--MainTransition);
 }
 
-.footer-block__email:hover,
-.footer-block__email:focus {
+.footer__email:hover,
+.footer__email:focus {
     color: var(--StudioBlueColor);
     cursor: pointer;
 }
 
-.footer-block__tel {
+.footer__tel {
     font-family: var(--FontDefaultRoboto);
     font-style: normal;
     font-weight: 400;
@@ -1086,13 +1057,13 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     transition-timing-function: var(--MainTransition);
 }
 
-.footer-block__tel:hover,
-.footer-block__tel:focus {
+.footer__tel:hover,
+.footer__tel:focus {
     color: var(--StudioBlueColor);
     cursor: pointer;
 }
 
-.footer-block__heading {
+.footer__heading {
     font-family: var(--FontDefaultRoboto);
     font-style: bold;
     font-weight: 700;
@@ -1107,13 +1078,13 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     padding-top: 12px;
 }
 
-.footer-block__icons {
+.footer__icons {
     display: flex;
     gap: 10px;
     padding-top: 20px;
 }
 
-.footer-block__icons--animation {
+.footer__icons--animation {
     width: 44px;
     height: 44px;
     display: flex;
@@ -1126,8 +1097,8 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     transition-timing-function: var(--MainTransition);
 }
 
-.footer-block__icons--animation:hover,
-.footer-block__icons--animation:focus {
+.footer__icons--animation:hover,
+.footer__icons--animation:focus {
     border-radius: 50%;
     background-color: var(--StudioBlueColor);
     fill: var(--MainWhiteColor);
@@ -1137,7 +1108,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     cursor: pointer;
 }
 
-.footer-block__newsletter-send-form {
+.footer__newsletter-send-form {
     width: 358px;
     height: 50px;
     color: rgba(255, 255, 255, 0.6);
@@ -1156,14 +1127,14 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     margin-top: 20px;
 }
 
-.footer-block__newsletter-send-form:focus,
-.footer-block__newsletter-send-form:hover {
+.footer__newsletter-send-form:focus,
+.footer__newsletter-send-form:hover {
     border-color: var(--StudioBlueColor);
     transition-duration: 250ms;
     transition-timing-function: var(--MainTransition);
 }
 
-.footer-block__submit-button {
+.footer__submit-button {
     position: relative;
     width: 200px;
     height: 50px;
@@ -1181,13 +1152,15 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     padding-right: 46px;
 }
 
-.footer-block__submit-button:hover {
+.footer__submit-button:hover {
     cursor: pointer;
 }
 
-.footer-block__icon-send-paperfly {
+.footer__icon-send-paperfly {
     fill: var(--MainWhiteColor);
     position: absolute;
     top: 13.5px;
     left: 131px;
 }
+
+/* /\--------------------footer-------------------------- /\ */
