@@ -836,7 +836,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     gap: 50px;
 }
 
-.portfolio__button-list {
+.portfolio__list {
     display: flex;
     justify-content: center;
     margin: 0;
@@ -872,9 +872,9 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     cursor: pointer;
 }
 
-/* \/  nowy blok wewnętrzny --------------------cards-block------------------------- \/ */
+/* \/  nowy blok wewnętrzny --------------------cards------------------------- \/ */
 
-.cards-block {
+.cards {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -884,7 +884,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     column-gap: 30px;
 }
 
-.cards-block__element {
+.cards__element {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -896,7 +896,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     transition-timing-function: var(--MainTransition);
 }
 
-.cards-block__overlay {
+.cards__overlay {
     position: relative;
     overflow: hidden;
     height: 294px;
@@ -904,7 +904,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     transition-timing-function: var(--MainTransition);
 }
 
-.cards-block__element--inside-animation {
+.cards__element--inside-animation {
     position: absolute;
     top: 0;
     left: 0;
@@ -928,17 +928,17 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     margin: 0;
 }
 
-.cards-block__element:hover .cards-block__element--inside-animation {
+.cards__element:hover .cards__element--inside-animation {
     transform: translatey(0);
 }
 
-.cards-block__element:hover {
+.cards__element:hover {
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.cards-block__element-border {
+.cards__border {
     display: flex;
     flex-direction: column;
     border-right: solid 1px rgba(238, 238, 238, 1);
@@ -952,7 +952,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     gap: 4px;
 }
 
-.cards-block__heading {
+.cards__heading {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
@@ -960,7 +960,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     margin: 0 0 0 24px;
 }
 
-.cards-block__description {
+.cards__description {
     color: var(--MainGreyColor);
     font-weight: 400;
     font-size: 16px;
@@ -969,7 +969,7 @@ nazwa zgodna ze specyfikacją FIGMY sekcja opisana jako atuty*/
     margin: 0 0 0 24px;
 }
 
-/* /\  nowy blok wewnętrzny --------------------cards-block-------------------------- /\ */
+/* /\  nowy blok wewnętrzny --------------------cards-------------------------- /\ */
 /* /\--------------------portfolio-block-------------------------- /\ */
 
 /* \/--------------------footer-------------------------- \/ */
