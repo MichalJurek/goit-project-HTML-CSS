@@ -1,0 +1,7 @@
+.advantages__icon {
+    &:hover,
+    &:focus {
+        fill: var(--StudioBlueColor);
+        cursor: pointer;
+    }
+}

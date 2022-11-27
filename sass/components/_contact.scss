@@ -1,0 +1,23 @@
+.contact {
+    display: flex;
+    margin: 0;
+    border: 0;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__element {
+    font-family: var(--FontDefaultRoboto);
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    color: var(--MainGreyColor);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: var(--MainTransition);
+    display: flex;
+    gap: 10px;
+}

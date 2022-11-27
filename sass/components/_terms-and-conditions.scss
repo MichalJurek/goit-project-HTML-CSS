@@ -1,0 +1,41 @@
+.terms-and-conditions {
+    border: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.terms-and-conditions__settings input:checked~.terms-and-conditions__custom-checkbox {
+    background-color: var(--StudioBlueColor);
+    border: none;
+    transition-duration: 250ms;
+    transition-timing-function: var(--MainTransition);
+}
+
+.terms-and-conditions__custom-checkbox {
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--MainBlackColor);
+    border-radius: 2px;
+    position: absolute;
+    left: 55px;
+    top: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: var(--MainTransition);
+}
+
+.terms-and-conditions__checkmark {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    fill: var(--MainWhiteColor);
+}
+
+.terms-and-conditions__links {
+    font-family: var(--FontDefaultRoboto);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 3%;
+    color: var(--StudioBlueColor);
+}

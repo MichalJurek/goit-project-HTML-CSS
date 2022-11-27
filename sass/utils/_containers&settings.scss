@@ -1,0 +1,67 @@
+.menu__space-between {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.modal_container {
+    display: flex;
+    position: relative;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: var(--MainBorderRadius4px);
+    width: 448px;
+    height: 40px;
+    margin-top: 28px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 0;
+}
+
+.modal__submit-sector {
+    display: flex;
+    border: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.advantages__sector-settings {
+    display: flex;
+    flex-direction: column;
+    height: 919px;
+    max-height: 100%;
+    justify-content: center;
+    gap: 94px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    border: 0;
+    border-radius: var(--MainBorderRadius4px);
+    background-color: var(--BacgroundLightGafitColor);
+}
+
+.team-section__sector-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.member-figure__settings {
+    margin: 0;
+}
+
+.member-figure__social-links-settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

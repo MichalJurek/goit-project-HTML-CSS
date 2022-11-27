@@ -1,0 +1,15 @@
+.logo__black {
+    &:hover,
+    &:focus {
+        color: var(--StudioBlueColor);
+        cursor: pointer;
+    }
+}
+
+.logo__white {
+    &:hover,
+    &:focus {
+        color: var(--StudioBlueColor);
+        cursor: pointer;
+    }
+}

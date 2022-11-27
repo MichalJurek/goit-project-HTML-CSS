@@ -1,0 +1,90 @@
+.footer {
+    background-color: var(--BacgroundGafitColor);
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    height: 252px;
+    gap: 70px;
+    padding-top: 70px;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    border: 0;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.footer__adress {
+    font-family: var(--FontDefaultRoboto);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 00.03em;
+    color: var(--MainWhiteColor);
+    text-decoration: none;
+}
+
+.footer__email {
+    font-family: var(--FontDefaultRoboto);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 00.03em;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: var(--MainTransition);
+}
+
+.footer__tel {
+    font-family: var(--FontDefaultRoboto);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 00.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: var(--MainTransition);
+}
+
+.footer__heading {
+    font-family: var(--FontDefaultRoboto);
+    font-style: bold;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 3%;
+    line-height: 16.41px;
+    color: var(--MainWhiteColor);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 12px;
+}
+
+.footer__newsletter-send-form {
+    width: 358px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: var(--FontDefaultRoboto);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3%;
+    background-color: transparent;
+    border: 1px solid rgba(117, 117, 117, 0.3);
+    border-radius: var(--MainBorderRadius4px);
+    padding: 0 0 0 16px;
+    outline: 0;
+    transition-duration: 250ms;
+    transition-timing-function: var(--MainTransition);
+    margin-top: 20px;
+}

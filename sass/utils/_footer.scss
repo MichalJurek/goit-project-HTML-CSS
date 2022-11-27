@@ -1,0 +1,56 @@
+.footer__email {
+    &:hover,
+    &:focus {
+        color: var(--StudioBlueColor);
+        cursor: pointer;
+    }
+}
+
+.footer__tel {
+    &:hover,
+    &:focus {
+        color: var(--StudioBlueColor);
+        cursor: pointer;
+    }
+}
+
+.footer__icons--animation {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--MainWhiteColor);
+    transition-duration: 250ms;
+    transition-timing-function: var(--MainTransition);
+}
+
+.footer__icons--animation {
+    &:hover,
+    &:focus {
+        border-radius: 50%;
+        background-color: var(--StudioBlueColor);
+        fill: var(--MainWhiteColor);
+        gap: 10px;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+    }
+}
+
+.footer__newsletter-send-form {
+    &:hover,
+    &:focus {
+        border-color: var(--StudioBlueColor);
+        transition-duration: 250ms;
+        transition-timing-function: var(--MainTransition);
+    }
+}
+
+.footer__submit-button {
+    &:hover {
+        cursor: pointer;
+    }
+}

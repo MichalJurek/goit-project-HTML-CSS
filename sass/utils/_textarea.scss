@@ -1,0 +1,14 @@
+.textarea__input {
+    &:focus {
+        outline: 0;
+    }
+}
+
+.textarea {
+    &:has(textarea:hover),
+    &:has(textarea:focus) {
+        border-color: var(--StudioBlueColor);
+        transition-duration: 250ms;
+        transition-timing-function: var(--MainTransition);
+    }
+}

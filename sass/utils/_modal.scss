@@ -1,0 +1,23 @@
+.modal__container {
+    &:has(input:hover),
+    &:has(input:focus) {
+        border-color: var(--StudioBlueColor);
+        transition-duration: 250ms;
+        transition-timing-function: var(--MainTransition);
+    }
+}
+
+.modal__container {
+    &:has(input:focus) .modal__icon,
+    &:has(input:hover) .modal__icon {
+        fill: var(--StudioBlueColor);
+        transition-duration: 250ms;
+        transition-timing-function: var(--MainTransition);
+    }
+}
+
+.modal__input {
+    &:focus {
+        outline: 0;
+    }
+}
