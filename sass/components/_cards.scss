@@ -15,7 +15,7 @@
     max-width: 370px;
     width: 100%;
     background-color: var(--MainWhiteColor);
-    flex-basis: calc((100%-2*30px)/3);
+    flex-basis: calc((100% - 2*30px)/3);
     transition-duration: 250ms;
     transition-timing-function: var(--MainTransition);
 }
