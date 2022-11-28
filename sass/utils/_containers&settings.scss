@@ -68,11 +68,3 @@
     align-items: center;
     gap: 10px;
 }
-
-.modal__hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition-duration: 500ms;
-    transition-timing-function: var(--MainTransition);
-}

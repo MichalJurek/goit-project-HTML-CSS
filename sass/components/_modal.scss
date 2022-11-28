@@ -42,7 +42,7 @@
     width: 100%;
 }
 
-.modal__container {
+.modal__fieldset {
     &:has(input:focus) .modal__icon,
     &:has(input:hover) .modal__icon {
         fill: var(--StudioBlueColor);
@@ -51,7 +51,7 @@
     }
 }
 
-.modal__container {
+.modal__fieldset {
     &:has(input:hover),
     &:has(input:focus) {
         border-color: var(--StudioBlueColor);
@@ -78,7 +78,7 @@
     }
 }
 
-.modal_container {
+.modal__fieldset {
     display: flex;
     position: relative;
     border: 1px solid rgba(33, 33, 33, 0.2);
