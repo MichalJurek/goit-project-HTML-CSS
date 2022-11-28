@@ -51,7 +51,7 @@
       <div class="header">
         <h1>EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU</h1>
         <button class="header__button" type="button" data-modal-open>Zamów usługe</button>
-        <div class="backdrop hidden" data-modal>
+        <div class="backdrop" data-modal>
           <div class="modal">
             <button type="button" class="modal__close-button" title="close-modal" data-modal-close>
               <svg class="" width="11" height="11">
@@ -60,21 +60,21 @@
             </button>
             <h4 class="modal__heading">Zostaw swoje dane w formularzu poniżej</h4>
             <form name="contact-details-form" autocomplete="on" novalidate>
-              <fieldset class="modal_container">
+              <fieldset class="modal__fieldset">
                 <label class="modal__label" for="username">Imię</label>
                 <svg class="modal__icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-icon-profile-person"></use>
                 </svg>
                 <input class="modal__input" type="text" id="username" required>
               </fieldset>
-              <fieldset class="modal_container">
+              <fieldset class="modal__fieldset">
                 <label class="modal__label" for="number">Telefon</label>
                 <svg class="modal__icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-icon-telephone"></use>
                 </svg>
                 <input class="modal__input" name="number" type="tel" id="number" required>
               </fieldset>
-              <fieldset class="modal_container">
+              <fieldset class="modal__fieldset">
                 <label class="modal__label" for="email">E-mail</label>
                 <svg class="modal__icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-icon-envelope-second"></use>
