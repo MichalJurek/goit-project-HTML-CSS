@@ -21,3 +21,31 @@
     display: flex;
     gap: 10px;
 }
+.contact__envelope-icon,
+.contact__icon-smartphone {
+    fill: var(--MainGreyColor);
+    transition-duration: 250ms;
+    transition-timing-function: var(--MainTransition);
+}
+
+.contact__element {
+
+    &:hover,
+    &:focus {
+        fill: var(--StudioBlueColor);
+        color: var(--StudioBlueColor);
+        cursor: pointer;
+    }
+}
+
+.contact__element {
+
+    &:hover .icon-smartphone,
+    &:hover .envelope-icon,
+    &:focus .icon-smartphone,
+    &:focus .envelope-icon {
+        fill: var(--StudioBlueColor);
+        color: var(--StudioBlueColor);
+        cursor: pointer;
+    }
+}

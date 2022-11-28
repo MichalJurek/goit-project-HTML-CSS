@@ -11,3 +11,27 @@
     margin: 0;
 }
 
+.header__button {
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+    }
+}
+
+.header__button {
+    color: var(--MainWhiteColor);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: var(--StudioBlueColor);
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    border-radius: var(--MainBorderRadius4px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    text-transform: none;
+    cursor: pointer;
+}

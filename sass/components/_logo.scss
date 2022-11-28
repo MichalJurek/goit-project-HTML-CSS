@@ -40,3 +40,21 @@
     transition-duration: 250ms;
     transition-timing-function: var(--MainTransition);
 }
+
+.logo__black {
+
+    &:hover,
+    &:focus {
+        color: var(--StudioBlueColor);
+        cursor: pointer;
+    }
+}
+
+.logo__white {
+
+    &:hover,
+    &:focus {
+        color: var(--StudioBlueColor);
+        cursor: pointer;
+    }
+}

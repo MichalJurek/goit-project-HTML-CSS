@@ -42,6 +42,26 @@
     width: 100%;
 }
 
+.modal__container {
+
+    &:has(input:focus) .modal__icon,
+    &:has(input:hover) .modal__icon {
+        fill: var(--StudioBlueColor);
+        transition-duration: 250ms;
+        transition-timing-function: var(--MainTransition);
+    }
+}
+
+.modal__container {
+
+    &:has(input:hover),
+    &:has(input:focus) {
+        border-color: var(--StudioBlueColor);
+        transition-duration: 250ms;
+        transition-timing-function: var(--MainTransition);
+    }
+}
+
 .modal__label {
     font-family: var(--FontDefaultRoboto);
     font-size: 12px;
@@ -52,4 +72,80 @@
     position: absolute;
     top: -18px;
     left: 0px;
+}
+
+.modal__input {
+    &:focus {
+        outline: 0;
+    }
+}
+
+.modal__hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition-duration: 500ms;
+    transition-timing-function: var(--MainTransition);
+}
+
+.modal_container {
+    display: flex;
+    position: relative;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: var(--MainBorderRadius4px);
+    width: 448px;
+    height: 40px;
+    margin-top: 28px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 0;
+}
+
+.modal__submit-sector {
+    display: flex;
+    border: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.modal__backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    justify-content: center;
+}
+
+.modal__close-button {
+    position: absolute;
+    cursor: pointer;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--MainWhiteColor);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.modal__submit-button {
+    color: var(--MainWhiteColor);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: var(--StudioBlueColor);
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    margin-top: 30px;
+    border-radius: var(--MainBorderRadius4px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    text-transform: none;
+    cursor: pointer;
 }

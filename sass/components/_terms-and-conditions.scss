@@ -39,3 +39,27 @@
     letter-spacing: 3%;
     color: var(--StudioBlueColor);
 }
+
+.terms-and-conditions__settings {
+    display: flex;
+    position: relative;
+    font-family: var(--FontDefaultRoboto);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 3%;
+    color: var(--MainGreyColor);
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    justify-content: center;
+    left: 12px;
+}
+
+.terms-and-conditions__settings input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}

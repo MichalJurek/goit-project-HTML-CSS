@@ -24,3 +24,11 @@
     padding: 0;
     gap: 30px;
 }
+
+.customers-section__icon {
+    &:hover {
+        fill: var(--StudioBlueColor);
+        border-color: var(--StudioBlueColor);
+        cursor: pointer;
+    }
+}

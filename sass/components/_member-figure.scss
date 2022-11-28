@@ -34,3 +34,30 @@
     color: var(--MainGreyColor);
     margin: 0 auto;
 }
+
+.member-figure__icon {
+    &:hover,
+    &:focus {
+        border-radius: 50%;
+        background-color: var(--StudioBlueColor);
+        fill: var(--MainWhiteColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+    }
+}
+
+.member-figure__settings {
+    margin: 0;
+}
+
+.member-figure__social-links-settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

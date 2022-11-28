@@ -1,44 +1,31 @@
 @import "./utils/variables.scss";
 @import "./utils/reset.scss";
 @import "./utils/containers&settings";
-@import "./components/buttons";
+@import "./utils/modal";
+
 @import "./components/icons";
 
 @import "./components/menu";
 @import "./components/logo";
-@import "./utils/logo";
 @import "./components/nav";
-@import "./utils/nav";
 @import "./components/contact";
-@import "./utils/contact";
 
 @import "./components/header";
-
-@import "./utils/backdrop";
-@import "./utils/hidden";
 @import "./components/modal";
-@import "./utils/modal";
 
 @import "./components/textarea";
-@import "./utils/textarea";
 
 @import "./components/terms-and-conditions";
-@import "./utils/terms-and-conditions";
 
 @import "./components/advantages";
-@import "./utils/advantages";
 
 @import "./components/middle-section";
 
 @import "./components/team-section";
 
 @import "./components/customers-section";
-@import "./utils/customers-section";
 
 @import "./components/portfolio";
-@import "./utils/portfolio";
 @import "./components/cards";
-@import "./utils/cards";
 
-@import "./utils/footer";
 @import "./components/footer";
