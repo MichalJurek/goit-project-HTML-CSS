@@ -29,7 +29,6 @@
 }
 
 .contact__element {
-
     &:hover,
     &:focus {
         fill: var(--StudioBlueColor);
@@ -39,11 +38,10 @@
 }
 
 .contact__element {
-
     &:hover .icon-smartphone,
-    &:hover .envelope-icon,
+    &:hover .contact__envelope-icon,
     &:focus .icon-smartphone,
-    &:focus .envelope-icon {
+    &:focus .contact__envelope-icon {
         fill: var(--StudioBlueColor);
         color: var(--StudioBlueColor);
         cursor: pointer;
