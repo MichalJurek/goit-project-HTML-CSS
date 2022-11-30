@@ -1,0 +1,25 @@
+.modal-button {
+    min-height: 50px;
+    min-width: 200px;
+
+    padding: 10px 15px;
+
+    color: var(--primary-white-color);
+    fill: var(--primary-white-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+        border-radius: 4px;
+    }
+}
