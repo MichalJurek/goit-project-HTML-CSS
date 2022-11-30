@@ -3,7 +3,6 @@
     margin-top: 9px;
     margin-left: 14px;
     margin-right: 10px;
-
 }
 
 .advantages__icon {
@@ -55,4 +54,14 @@
         fill: var(--StudioBlueColor);
         cursor: pointer;
     }
+}
+
+.menu__icon {
+    transition-duration: 250ms;
+    transition-timing-function: var(--MainTransition);
+    &:hover,
+    &:focus {
+        fill: var(--StudioBlueColor);
+        cursor: pointer;
+        }
 }

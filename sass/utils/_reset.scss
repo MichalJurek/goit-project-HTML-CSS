@@ -8,11 +8,23 @@ body {
 h1 {
     color: var(--MainWhiteColor);
     font-style: normal;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    /*
+    color: var(--MainWhiteColor);
+    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    */
 }
 
