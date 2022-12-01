@@ -102,8 +102,6 @@
       <div class="container hero-section__container"></div>
       <h1 class="hero-section__title">Efektywne rozwiązania<br>dla waszego biznesu</h1>
       <button type="button" class="modal__button" data-modal-open>Zamów usługę</button>
-      
-      
       <div class="modal">
         <button type="button" class="modal__button-close" data-modal-close>
           <svg class="button__icon" width="11" height="11">
@@ -111,10 +109,58 @@
           </svg>
         </button>
         <h2 class="modal__title">Zostaw swoje dane w formularzu poniżej</h2>
+        <form class="form">
+          <div class="form-modal">
+            <label class="form-modal__label" for="name">Imię</label>
+            <input class="form-modal__input" type="text" name="name" id="name" />
+            <span class="form-modal__icon">
+              <svg width="18" height="18">
+                <use href="./images/symbol-defs.svg#person-black"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="form-modal">
+            <label class="form-modal__label" for="phone">Telefon</label>
+            <input class="form-modal__input" type="tel" name="phone" id="phone" />
+            <span class="form-modal__icon">
+              <svg width="18" height="18">
+                <use href="./images/symbol-defs.svg#phone-black"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="form-modal">
+            <label class="form-modal__label" for="email">E-mail</label>
+            <input class="form-modal__input" type="email" name="email" id="email" />
+            <span class="form-modal__icon">
+              <svg width="18" height="18">
+                <use href="./images/symbol-defs.svg#email-black"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="form-modal">
+            <label class="form-modal__label" for="comment">Komentarz</label>
+            <textarea class="form-modal__textarea" name="comment" id="comment" rows="7"
+              placeholder="Wprowadź tekst"></textarea>
+          </div>
+          <label class="modal-checkbox">
+            <input class="modal-checkbox__input" type="checkbox" />
+            <span class="modal-checkbox__icon"></span>
+            <span class="modal-checkbox__text">Oświadczam iż akceptuję&#160;<a class="modal-checkbox__links"
+                href=""><span>Regulamin</span></a>
+              &#160;i&#160;
+              <a class="modal-checkbox__links" href=""><span>Politykę Prywatności</span></a></span>
+          </label>
+          <button type="submit" class="modal__submit-button">Wyślij</button>
+        </form>
       </div>
+
+
+
+
 
     </section>
   </main>
 </body>
+<script src="./js/modal.js"></script>
 
 </html>
