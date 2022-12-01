@@ -1,10 +1,12 @@
 @import "./utils/variables";
 @import "./utils/container";
+@import "./utils/backdrop";
 @import "./utils/visual-hidden";
+@import "./utils/reset";
 
-@import "./components/common";
 @import "./components/header";
 @import "./components/logo";
 @import "./components/mobile-menu";
 @import "./components/hero-section";
+@import "./components/modal";
 
