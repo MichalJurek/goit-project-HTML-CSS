@@ -11,3 +11,47 @@
     line-height: 1.17;
     text-align: center;
 }
+
+.customer-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.customer-section__element {
+    width: calc((100% - 30px) / 2);
+    height: 92px;
+    border: 0;
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
+
+}
+
+.customer-section__link {
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--icon-grey-color);
+    border-radius: 4px;
+
+    fill: var(--icon-grey-color);
+    transition: all 0.2s ease-out;
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        border: 1px solid var(--accent-color);
+    }
+}
