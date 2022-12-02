@@ -100,11 +100,9 @@
     font-size: 34px;
     line-height: 1.18;
     letter-spacing: 0.02em;
-
     color: var(--accent-color);
-
     @media screen and (max-width: 410px) {
-        font-size: 24px;
+    font-size: 24px;
         
     }
 }
