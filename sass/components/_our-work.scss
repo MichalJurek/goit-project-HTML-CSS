@@ -36,15 +36,18 @@
 
 .our-work__description {
     position: absolute;
-    width: 205px;
-    height: 16px;
-    left: 50%;
-    top: 251px;
-    transform: translate(-50%, 0);
-    margin: 0;
-    padding: 0;
+    bottom: 0;
+    font-size: 14px;
     font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
+    line-height: 16px;
+    letter-spacing: 0.03em;
     color: var(--primary-white-color);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
 }
