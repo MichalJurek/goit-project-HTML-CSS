@@ -61,10 +61,11 @@
     fill: var(--icon-grey-color);
     transition: all 0.2s ease-out;
     border-radius: 50%;
-
+    transition-duration: 250ms;
+    transition-timing-function: 
     &:hover,
     &:focus {
-        background-color: var(--accent-color);
+        background-color: var(--studio-blue-color);
         fill: var(--primary-white-color);
         border-radius: 50%;
         border: 0;
