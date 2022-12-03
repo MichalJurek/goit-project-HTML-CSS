@@ -1,13 +1,7 @@
 .our-team {
     background-color: var(--background-grey-color);
-}
-
-.our-team__list {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .our-team__title {
@@ -17,6 +11,14 @@
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+}
+
+.our-team__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
 .our-team__card {
@@ -36,4 +38,35 @@
         margin-bottom: 30px;
     }
 
+}
+
+.our-team__role {
+    padding-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--title-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+
+.our-team__link {
+    display: inline-flex;
+    text-decoration: none;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    fill: var(--icon-grey-color);
+    transition: all 0.2s ease-out;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        fill: var(--primary-white-color);
+        border-radius: 50%;
+        border: 0;
+    }
 }
