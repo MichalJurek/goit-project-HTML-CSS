@@ -32,7 +32,7 @@
     border-radius: 4px;
     background-color: var(--background-grey-color);
     transition-duration: 250ms;
-    transition-timing-function: var(--MainTransition);
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .advantages__icon {
