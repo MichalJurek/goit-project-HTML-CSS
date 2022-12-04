@@ -28,6 +28,11 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    transition: all 0.2s ease-out;
+    &:hover,
+    &:focus {
+        fill: var(--studio-blue-color);
+        }
     }
   }
 
