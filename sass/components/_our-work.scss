@@ -23,6 +23,7 @@
 .our-work__card {
     position: relative;
     display: flex;
+    z-index: -1;
 }
 
 .our-work__description {
