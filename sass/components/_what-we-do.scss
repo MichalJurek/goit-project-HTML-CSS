@@ -1,12 +1,13 @@
-.our-work {
+.what-we-do {
     padding-top: 47px;
+    padding-bottom: 94px;
 
     @media screen and (max-width: 1199px) {
         display: none;
     }
 }
 
-.our-work__title {
+.what-we-do__title {
     margin-top: 0;
     margin-bottom: 50px;
     font-size: 36px;
@@ -14,19 +15,19 @@
     text-align: center;
 }
 
-.our-work__list {
+.what-we-do__list {
     display: flex;
     gap: 30px;
     list-style: none;
 }
 
-.our-work__card {
+.what-we-do__card {
     position: relative;
     display: flex;
     z-index: -1;
 }
 
-.our-work__description {
+.what-we-do__description {
     position: absolute;
     bottom: 0;
     font-size: 14px;
