@@ -32,21 +32,37 @@
     @media screen and (min-width: 768px) {
         max-width: calc((100% - 40px) / 3);
     }
+
+    @media screen and (min-width: 1280px) {
+        max-width: calc((100% - 60px) / 3);
+        }
 }
 
-.contacts__heading {
+.contacts__category {
     background-color: rgba(240, 209, 165, 1);
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0.04em;
     width: 73px;
     height: 28px;
     border-radius: 6px;
     text-align: center;
     margin-bottom: 32px;
 }
+
+.contacts__category--other {
+    background-color: rgba(194, 226, 151, 1);
+    width: 138px;
+}
+
+.contacts__category-text {
+    font-family: DM Sans, sans-serif;
+    font-style: Medium;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform:uppercase;
+}
+
 
 .contacts__box {
     margin: 0;
@@ -59,8 +75,8 @@
     margin: 0;
 }
 .contacts__box-title {
-    font-family: DM Sans;
-    color: chartreuse;
+    font-family: DM Sans, sans-serif;
+    color: rgba(0, 0, 0, 1);
     font-size: 16px;
     font-weight: 500;
     line-height: 30px;
@@ -68,22 +84,47 @@
     margin: 0;
 }
 .contacts__box-description {
-    font-family: DM Sans;
+    font-family: DM Sans, sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 29px;
     letter-spacing: 0.04em;
-    color: rgb(220, 14, 59);
+    color: rgba(144, 126, 130, 1);
     margin: 0;
     padding: 10px 0 32px 0;
 }
 
 .contacts__box-time {
-    font-family: DM Sans;
+    font-family: DM Sans, sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 30px;
     letter-spacing: 0em;
     color: rgba(255, 165, 186, 1);
     margin: 0;
+}
+
+.contacts__adress {
+    margin-top: 32px;
+}
+
+.contacts__adress_link {
+    font-family: DM Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+    color: rgba(144, 126, 130, 1);
+    font-style: normal;
+    text-decoration: none;
+    margin: 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: rgba(144, 126, 130, 1);
+    
+        &:hover,
+        &:focus {
+                color: rgba(212, 19, 66, 1);
+                cursor: pointer;
+        }
 }
