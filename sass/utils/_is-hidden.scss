@@ -5,3 +5,11 @@
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+.hidden-title {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+}
