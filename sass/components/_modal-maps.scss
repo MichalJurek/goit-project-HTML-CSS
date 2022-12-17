@@ -1,0 +1,75 @@
+.modal-map__header {
+  font-family: DM Sans, sans-serif;
+  color: rgba(212, 19, 66, 1);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+}
+
+.modal-map__button {
+    font-family: DM Sans, sans-serif;
+    color: rgba(212, 19, 66, 1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 50%;
+    border-color: rgba(212, 19, 66, 1);
+    cursor: pointer;
+}
+.modal-map__container {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+
+}
+
+.modal-map__office-box {
+margin: 0;
+padding: 0;
+}
+
+.modal-map__title {
+  font-family: DM Sans, sans-serif;
+  color: rgba(0, 0, 0, 1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.contacts__adress {
+  display: flex;
+  flex-direction: column; 
+  margin-top: 32px;
+}
+
+.contacts__adress_link {
+  font-family: DM Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+  color: rgba(144, 126, 130, 1);
+  font-style: normal;
+  text-decoration: none;
+  margin: 0;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  color: rgba(144, 126, 130, 1);
+
+  &:hover,
+  &:focus {
+    color: rgba(212, 19, 66, 1);
+    cursor: pointer;
+  }
+}
+.modal-map__map {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid grey;
+}
