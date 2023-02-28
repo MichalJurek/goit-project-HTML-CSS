@@ -1,2 +1,1 @@
-# goit-markup-hw-08
-zadanie domowe nr 8
+# Enviroment for solo work in group project.
